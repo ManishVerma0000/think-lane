@@ -12,44 +12,44 @@ const AboutUsPage: React.FC = () => {
   const benefits = [
     {
       number: "01",
-      title: "Certification",
+      title: "Proven Strategies",
       description:
-        "After completion of our comprehensive UX platform, all students will receive industry-recognized certification that validates their skills and expertise.",
+        "We craft data-driven marketing strategies that have helped hundreds of businesses boost their visibility, leads, and sales.",
       icon: <Award className="text-emerald-500" size={24} />,
     },
     {
       number: "02",
-      title: "Relevant Cases",
+      title: "Real Results",
       description:
-        "Work with real-world case studies and projects from leading companies. Gain practical experience with actual design challenges.",
+        "From increasing website traffic to improving conversion rates, we deliver measurable results you can track and trust.",
       icon: <Target className="text-emerald-500" size={24} />,
     },
     {
       number: "03",
-      title: "Live Conversations",
+      title: "Direct Communication",
       description:
-        "Connect directly with industry experts and mentors through live sessions, Q&A, and interactive workshops.",
+        "We keep you in the loop with transparent reporting, regular updates, and open conversations about your campaigns.",
       icon: <MessageCircle className="text-emerald-500" size={24} />,
     },
     {
       number: "04",
-      title: "Affordable Pricing",
+      title: "Affordable Plans",
       description:
-        "Access world-class UX education at competitive prices. We believe quality education should be accessible to everyone.",
+        "Our tailored packages are designed to suit businesses of all sizes, ensuring maximum ROI without breaking the bank.",
       icon: <BookOpen className="text-emerald-500" size={24} />,
     },
     {
       number: "05",
-      title: "Lifetime Support",
+      title: "Ongoing Support",
       description:
-        "Get continuous support even after course completion. Access our community, resources, and career guidance for life.",
+        "From campaign launch to ongoing optimization, our team is always here to guide and support your growth.",
       icon: <Users className="text-emerald-500" size={24} />,
     },
     {
       number: "06",
-      title: "Placement Assistance",
+      title: "Growth Partnerships",
       description:
-        "Receive dedicated placement support with portfolio reviews, interview preparation, and direct connections to hiring partners.",
+        "We build long-term partnerships with our clients, acting as an extension of your marketing team.",
       icon: <Lightbulb className="text-emerald-500" size={24} />,
     },
   ];
@@ -66,33 +66,26 @@ const AboutUsPage: React.FC = () => {
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                   About Us
                 </h1>
-                <h2 className="text-2xl lg:text-3xl font-semibold text-blue-600 mb-6">
-                  WEEKENS UX Providing The Best Opportunities To The Students
-                  Around The Globe.
+                <h2 className="text-2xl lg:text-3xl font-semibold text-emerald-500 mb-6">
+                  Driving Growth & Visibility for Businesses Worldwide.
                 </h2>
               </div>
 
               <div className="space-y-4 text-gray-600">
                 <p>
-                  We are passionate about transforming lives through exceptional
-                  UX education. Our comprehensive platform brings together
-                  industry experts, real-world projects, and cutting-edge
-                  curriculum to prepare students for successful careers in user
-                  experience design.
+                  We are a full-service digital marketing agency dedicated to
+                  helping businesses grow their online presence, generate more
+                  leads, and increase revenue.
                 </p>
                 <p>
-                  Founded by leading professionals in the UX field, WEEKENS UX
-                  Platform is designed to bridge the gap between academic
-                  learning and industry requirements. We believe in practical,
-                  hands-on learning that prepares students for the challenges of
-                  modern design.
+                  Our team of strategists, creatives, and tech experts work
+                  together to create impactful campaigns across SEO, social
+                  media, paid advertising, content marketing, and more.
                 </p>
                 <p>
-                  Our mission extends beyond just education - we're building a
-                  global community of UX professionals who support each other
-                  throughout their careers. From beginners to advanced
-                  practitioners, we provide the tools, knowledge, and network
-                  needed for success.
+                  We believe in building strong, lasting partnerships with our
+                  clients — delivering not just campaigns, but long-term growth
+                  strategies tailored to your unique goals.
                 </p>
               </div>
             </div>
@@ -101,21 +94,11 @@ const AboutUsPage: React.FC = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img
-                  src="/api/placeholder/600/400"
-                  alt="Modern workspace with laptop and design materials"
+                  src="/priscilla-du-preez-XkKCui44iM0-unsplash.jpg"
+                  alt="Digital marketing workspace with analytics dashboard"
                   className="rounded-2xl shadow-2xl w-full h-auto"
                 />
-                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
-                  <div className="flex items-center">
-                    <div className="bg-blue-100 p-3 rounded-lg">
-                      <Users className="text-blue-600" size={24} />
-                    </div>
-                    <div className="ml-4">
-                      <p className="text-2xl font-bold text-gray-900">10k+</p>
-                      <p className="text-sm text-gray-600">Global Students</p>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -130,17 +113,12 @@ const AboutUsPage: React.FC = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img
-                  src="/api/placeholder/500/400"
-                  alt="Colorful design elements and tools"
+                  src="/modern-equipped-computer-lab.jpg"
+                  alt="Marketing strategy and creative tools"
                   className="rounded-2xl w-full h-auto"
                 />
                 {/* Floating Elements */}
-                <div className="absolute top-4 right-4 bg-white p-3 rounded-full shadow-lg">
-                  <div className="w-4 h-4 bg-pink-400 rounded-full"></div>
-                </div>
-                <div className="absolute bottom-8 left-4 bg-white p-3 rounded-full shadow-lg">
-                  <div className="w-4 h-4 bg-blue-400 rounded-full"></div>
-                </div>
+                
               </div>
             </div>
 
@@ -148,52 +126,53 @@ const AboutUsPage: React.FC = () => {
             <div className="lg:w-1/2">
               <div className="border-l-4 border-emerald-500 pl-6 mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Why Us
+                  Why Choose Us
                 </h2>
                 <h3 className="text-xl lg:text-2xl font-semibold text-emerald-600 mb-6">
-                  We are always working to provide you best of the features in
-                  all aspects.
+                  We combine creativity, technology, and data to deliver
+                  exceptional results.
                 </h3>
               </div>
 
               <div className="space-y-6">
                 <p className="text-gray-600">
-                  We stand out in the crowded online education space by offering
-                  a unique blend of theoretical knowledge and practical
-                  application. Our curriculum is constantly updated to reflect
-                  the latest industry trends and best practices.
+                  Unlike many agencies, we don’t believe in one-size-fits-all
+                  marketing. Every strategy is personalized to your business
+                  goals and audience.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                    <span className="text-gray-700">
-                      Industry-Expert Instructors
-                    </span>
+                    <span className="text-gray-700">SEO & Content Experts</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="text-gray-700">Real-World Projects</span>
+                    <span className="text-gray-700">
+                      Social Media Specialists
+                    </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-pink-500 rounded-full"></div>
-                    <span className="text-gray-700">Flexible Learning</span>
+                    <span className="text-gray-700">
+                      Data-Driven Campaigns
+                    </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    <span className="text-gray-700">Career Support</span>
+                    <span className="text-gray-700">
+                      Dedicated Account Managers
+                    </span>
                   </div>
                 </div>
 
                 <p className="text-gray-600">
-                  Our comprehensive approach ensures that every student not only
-                  learns the fundamentals of UX design but also develops the
-                  confidence and skills needed to excel in their chosen career
-                  path.
+                  We measure success by your business growth — more traffic,
+                  better engagement, and higher conversions.
                 </p>
 
                 <button className="bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
-                  Learn More
+                  Let’s Grow Your Brand
                 </button>
               </div>
             </div>
@@ -211,12 +190,11 @@ const AboutUsPage: React.FC = () => {
               </h2>
             </div>
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              By Joining WEEKENS UX Platform, One Can Avail a Lot Of Benefits.
+              Partnering With Us Means More Than Just Marketing.
             </h3>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Unlock your potential with our comprehensive UX platform that
-              offers unmatched value and support throughout your learning
-              journey and beyond.
+              We go beyond running ads — we craft experiences, tell stories, and
+              build strategies that make your brand unforgettable.
             </p>
           </div>
 
@@ -256,18 +234,18 @@ const AboutUsPage: React.FC = () => {
       <section className="py-16 bg-gradient-to-r from-emerald-600 to-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Ready to Transform Your Career in UX Design?
+            Ready to Take Your Business to the Next Level?
           </h2>
           <p className="text-emerald-100 text-lg mb-8 max-w-2xl mx-auto">
-            Join thousands of students who have already started their journey
-            with WEEKENS UX Platform. Your future in UX design starts here.
+            Let’s create a marketing strategy that gets real results and grows
+            your brand faster than ever.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
-              Start Your Journey
+              Get Started Today
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-emerald-600 transition-colors">
-              View Courses
+              View Our Services
             </button>
           </div>
         </div>
@@ -279,21 +257,23 @@ const AboutUsPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="text-4xl font-bold text-emerald-600 mb-2">
-                15k+
+                500+
               </div>
-              <div className="text-gray-600">Students Enrolled</div>
+              <div className="text-gray-600">Brands Served</div>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
-              <div className="text-gray-600">Success Rate</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">150%</div>
+              <div className="text-gray-600">Average ROI Increase</div>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
-              <div className="text-gray-600">Expert Mentors</div>
+              <div className="text-4xl font-bold text-purple-600 mb-2">
+                50+
+              </div>
+              <div className="text-gray-600">Marketing Experts</div>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="text-4xl font-bold text-pink-600 mb-2">24/7</div>
-              <div className="text-gray-600">Support Available</div>
+              <div className="text-gray-600">Client Support</div>
             </div>
           </div>
         </div>

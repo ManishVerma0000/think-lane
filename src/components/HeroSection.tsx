@@ -162,58 +162,172 @@ const CourseLandingPage: React.FC = () => {
       </section>
 
       {/* Instructors */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our Mentor
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Learn from industry experts who bring real-world experience to the
-              classroom.
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-2xl p-10 text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
-              <img
-                src="/mentor.jpg"
-                alt="Rakesh Kumar"
-                className="w-60 h-60 rounded-full mx-auto mb-6 object-cover border-4 border-emerald-500"
-              />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                Rakesh Kumar
-              </h3>
-              <p className="text-emerald-600 font-semibold text-lg mb-4">
-                Lead
-              </p>
-              <p className="text-gray-600 text-base leading-relaxed mb-6">
-                8 years of experience
-              </p>
-              <button className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">
-                Know More
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-emerald-600 to-blue-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Courses was Designed by a Mentor platform for those looking to start
-            a new career, or level a skillset.
-          </h2>
-          <p className="text-emerald-100 text-lg mb-8 max-w-2xl mx-auto">
-            Join thousands of students and start your learning journey today.
-            Get access to expert-led courses and transform your career.
-          </p>
-          <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
-            Start Learning Today
-          </button>
-        </div>
-      </section>
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+      Is this Programme right for you?
+    </h2>
+
+    <div className="text-left text-emerald-100 text-lg mb-8 max-w-2xl mx-auto space-y-4">
+      <p>Students who want to learn high-demand marketing skills, not just theory from college.</p>
+      <p> Beginners in digital marketing who feel overwhelmed by scattered content.</p>
+      <p> Career switchers from sales, operations, or other fields who want to enter marketing.</p>
+      <p> Anyone serious about building a long-term career in performance marketing.</p>
+      <p>No prior experience needed — just curiosity, commitment, and willingness to learn with structure.</p>
+    </div>
+
+    <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
+      Start Learning Today
+    </button>
+  </div>
+</section>
+
+
+
+
+<section className="py-20 bg-gradient-to-r from-emerald-600 to-blue-600  mt-4">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+  
+
+    {/* SECTION 3: What You'll Learn */}
+    <div className="text-left text-white text-lg mb-8 max-w-2xl mx-auto">
+      <h3 className="text-2xl font-bold mb-4 flex items-center">
+        <span className="mr-2"></span>  What You’ll Learn
+      </h3>
+      <p className="mb-4 text-emerald-100 italic">
+        Headline: What You’ll Actually Learn Inside This Program
+      </p>
+      <ul className="space-y-3 text-emerald-100">
+        <li> Meta Ads (Instagram + Facebook) – Setup to Scaling</li>
+        <li> Google Ads (Search + Display) – From basics to smart strategies</li>
+        <li> Copywriting + Creatives – Build ads that convert</li>
+        <li> Targeting, Retargeting, Funnel Strategy</li>
+        <li> Budget Allocation & Media Planning (Agency Style)</li>
+        <li> Analytics, ROAS, Scaling frameworks</li>
+      </ul>
+    </div>
+
+    <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
+      Start Learning Today
+    </button>
+  </div>
+</section>
+
+
+<section className="py-20 bg-gray-50">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+    {/* Left Content */}
+    <div>
+      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+        Class Structure & Fee Details
+      </h2>
+
+      {/* Class Schedule */}
+      <h3 className="text-xl font-semibold text-emerald-600 mb-2">Class Schedule</h3>
+      <ol className="space-y-2 text-gray-700 mb-6">
+        <li>Every Monday, Wednesday & Friday</li>
+        <li> 1 Hour per session</li>
+        <li> Live classes with step-by-step guidance</li>
+        <li> Course Duration: 3 Months</li>
+      </ol>
+
+      {/* Doubt Solving */}
+      <h3 className="text-xl font-semibold text-emerald-600 mb-2"> Doubt Solving & Q&amp;A</h3>
+      <ul className="space-y-2 text-gray-700 mb-6">
+        <li> Every Tuesday & Friday</li>
+        <li> Interactive Q&amp;A with real campaign troubleshooting & feedback</li>
+      </ul>
+
+      {/* Group Learning */}
+      <h3 className="text-xl font-semibold text-emerald-600 mb-2"> Group Learning Format</h3>
+      <p className="text-gray-700 mb-4">
+        All sessions are group classes with collaborative learning and discussion.
+      </p>
+
+      {/* Fee */}
+      <div className="bg-gradient-to-r from-emerald-600 to-blue-600 p-4 rounded-lg mt-6">
+        <h3 className="text-2xl font-bold text-emerald-700 mb-2"> Course Fee</h3>
+        <p className="text-lg text-gray-900 font-semibold">
+          ₹20,000 (One-Time Payment)
+        </p>
+        <p className="text-sm text-black mt-2">
+          No hidden charges. All tools, templates & support included. Limited seats per batch.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Image */}
+    <div className="h-full w-full">
+      <img
+        src="/classroom.jpg"
+        alt="Classroom session"
+        className="rounded-lg shadow-lg"
+      />
+    </div>
+
+  </div>
+</section>
+
+            <section className="py-20 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    {/* Left Column - Text */}
+    <div>
+      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+        Meet Our Mentor
+      </h2>
+      <p className="text-gray-600 mb-4">
+        Learn from <span className="text-emerald-600 font-semibold">Rakesh Kumar</span>, 
+        an industry leader in Performance Marketing with over <strong>8 years of hands-on experience</strong>.
+      </p>
+      <p className="text-gray-600 mb-6">
+        Rakesh has worked with startups and Fortune 500 companies, managing multi-crore ad budgets and 
+        generating high-ROI campaigns across Meta Ads and Google Ads.
+      </p>
+      
+      {/* Achievements */}
+      <ul className="space-y-3 mb-8">
+        <li className="flex items-start">
+          <span className="text-emerald-500 text-lg mr-2">✅</span>
+          Trained over 1,000 students & professionals
+        </li>
+        <li className="flex items-start">
+          <span className="text-emerald-500 text-lg mr-2">✅</span>
+          Scaled 100+ businesses using data-driven strategies
+        </li>
+        <li className="flex items-start">
+          <span className="text-emerald-500 text-lg mr-2">✅</span>
+          Managed ad spends exceeding ₹5 Crore
+        </li>
+      </ul>
+
+      {/* CTA */}
+      <button className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-8 py-3 rounded-full transition-colors duration-300 shadow-lg">
+        Know More
+      </button>
+    </div>
+
+    {/* Right Column - Image */}
+    <div className="relative">
+      <img
+        src="/mentor.jpg"
+        alt="Rakesh Kumar"
+        className="rounded-2xl shadow-xl object-cover w-full max-h-[500px]"
+      />
+      <div className="absolute -top-4 -left-4 w-20 h-20 bg-emerald-500 rounded-full opacity-20"></div>
+      <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-emerald-400 rounded-full opacity-20"></div>
+    </div>
+
+  </div>
+</section>
+
+
+
 
       {/* Blog/News Section */}
       <section className="py-20">
