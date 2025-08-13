@@ -1,13 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import {
-  Menu,
-  X,
   Play,
-  Star,
-  Users,
-  Clock,
-  Award,
   ChevronRight,
   Facebook,
   Twitter,
@@ -17,7 +11,6 @@ import {
 import ContactUsPage from "./ContactUsPage";
 
 const CourseLandingPage: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const courses = [
     {
@@ -47,136 +40,9 @@ const CourseLandingPage: React.FC = () => {
     },
   ];
 
-  const instructors = [
-    {
-      name: "Sarah Johnson",
-      role: "Design Expert",
-      experience: "8+ years",
-      image: "/api/placeholder/80/80",
-    },
-    {
-      name: "Mike Chen",
-      role: "UX Specialist",
-      experience: "6+ years",
-      image: "/api/placeholder/80/80",
-    },
-    {
-      name: "Emily Davis",
-      role: "Business Analyst",
-      experience: "10+ years",
-      image: "/api/placeholder/80/80",
-    },
-    {
-      name: "Alex Kumar",
-      role: "Tech Lead",
-      experience: "12+ years",
-      image: "/api/placeholder/80/80",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <div className="text-2xl font-bold text-emerald-600">
-                CourseHub
-              </div>
-            </div>
-
-            {/* Desktop Navigation */}
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <a
-                  href="#"
-                  className="text-gray-900 hover:text-emerald-600 px-3 py-2 text-sm font-medium"
-                >
-                  Home
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-emerald-600 px-3 py-2 text-sm font-medium"
-                >
-                  Courses
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-emerald-600 px-3 py-2 text-sm font-medium"
-                >
-                  About
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-emerald-600 px-3 py-2 text-sm font-medium"
-                >
-                  Contact
-                </a>
-              </div>
-            </div>
-
-            <div className="hidden md:flex items-center space-x-4">
-              <button className="text-gray-600 hover:text-emerald-600 px-3 py-2 text-sm font-medium">
-                Login
-              </button>
-              <button className="bg-emerald-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-emerald-700">
-                Get Started
-              </button>
-            </div>
-
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-600 hover:text-gray-900 p-2"
-              >
-                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-white border-t">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a
-                href="#"
-                className="text-gray-900 block px-3 py-2 text-base font-medium"
-              >
-                Home
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 block px-3 py-2 text-base font-medium"
-              >
-                Courses
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 block px-3 py-2 text-base font-medium"
-              >
-                About
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 block px-3 py-2 text-base font-medium"
-              >
-                Contact
-              </a>
-              <div className="pt-2 border-t">
-                <button className="text-gray-600 block px-3 py-2 text-base font-medium w-full text-left">
-                  Login
-                </button>
-                <button className="bg-emerald-600 text-white px-3 py-2 rounded-lg text-base font-medium hover:bg-emerald-700 w-full text-left mt-2">
-                  Get Started
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
-      </nav>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-emerald-50 to-blue-50 py-12 lg:py-20">
@@ -300,7 +166,7 @@ const CourseLandingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our Mentors
+              Meet Our Mentor
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Learn from industry experts who bring real-world experience to the
@@ -311,7 +177,7 @@ const CourseLandingPage: React.FC = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-2xl p-10 text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
               <img
-                src='/mentor.jpg'
+                src="/mentor.jpg"
                 alt="Rakesh Kumar"
                 className="w-60 h-60 rounded-full mx-auto mb-6 object-cover border-4 border-emerald-500"
               />
@@ -321,9 +187,12 @@ const CourseLandingPage: React.FC = () => {
               <p className="text-emerald-600 font-semibold text-lg mb-4">
                 Lead
               </p>
-              <p className="text-gray-600 text-base leading-relaxed">
-                * years of experience
+              <p className="text-gray-600 text-base leading-relaxed mb-6">
+                8 years of experience
               </p>
+              <button className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">
+                Know More
+              </button>
             </div>
           </div>
         </div>
@@ -425,120 +294,7 @@ const CourseLandingPage: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
-              <div className="text-2xl font-bold text-emerald-400 mb-4">
-                CourseHub
-              </div>
-              <p className="text-gray-300 mb-6">
-                Providing life-changing experiences through education. Your
-                journey to success starts here.
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <Facebook size={20} />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <Twitter size={20} />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <Instagram size={20} />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <Linkedin size={20} />
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Courses
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Instructors
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Categories</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Design
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Development
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Business
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Marketing
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Support</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Help Center
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Refund Policy
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-700 mt-12 pt-8 text-center">
-            <p className="text-gray-300">
-              © 2024 CourseHub. All rights reserved. Made with ❤️ for learners
-              worldwide.
-            </p>
-          </div>
-        </div>
-      </footer>
+  
     </div>
   );
 };

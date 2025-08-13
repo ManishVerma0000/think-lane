@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import { Star, Mail, MessageCircle, X, Instagram, Facebook } from 'lucide-react';
 
@@ -32,18 +33,18 @@ const ProfilePage: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face" 
+                  src='/mentor.jpg' 
                   alt="Nguyen Shane"
                   className="w-32 h-32 rounded-2xl object-cover"
                 />
-                <div className="absolute -top-2 -right-2 bg-white rounded-full p-1 shadow-lg">
+                {/* <div className="absolute -top-2 -right-2 bg-white rounded-full p-1 shadow-lg">
                   <span className="text-lg font-bold text-gray-600">#2</span>
-                </div>
+                </div> */}
               </div>
               
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-2">
-                  <h1 className="text-2xl font-bold text-gray-900">Nguyen Shane</h1>
+                  <h1 className="text-2xl font-bold text-gray-900">Rahul Kumar</h1>
                   <span className="text-xl">🇬🇧</span>
                 </div>
                 <p className="text-gray-600 mb-3">
@@ -52,7 +53,7 @@ const ProfilePage: React.FC = () => {
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
                   <span>💬 Speaks: English</span>
                   <span className="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">NATIVE</span>
-                  <span>, Spanish, Turkish</span>
+                  <span>, Hindi</span>
                 </div>
                 
                 {/* Rating Badges */}
@@ -67,7 +68,7 @@ const ProfilePage: React.FC = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-2 bg-red-50 px-3 py-2 rounded-lg">
+                  {/* <div className="flex items-center gap-2 bg-red-50 px-3 py-2 rounded-lg">
                     <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white">
                       <Star className="w-4 h-4 fill-current" />
                     </div>
@@ -75,7 +76,7 @@ const ProfilePage: React.FC = () => {
                       <div className="font-medium text-gray-900">Top 1%</div>
                       <div className="text-gray-500">ENGLISH TUTOR</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
