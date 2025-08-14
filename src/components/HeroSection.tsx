@@ -10,8 +10,11 @@ import {
 } from "lucide-react";
 import ContactUsPage from "./ContactUsPage";
 import CoursesCarousel from "./CoursesCarousel";
+import { useRouter } from "next/navigation";
+
 
 const CourseLandingPage: React.FC = () => {
+  const router=useRouter()
 
   const courses = [
   {
@@ -65,6 +68,13 @@ const CourseLandingPage: React.FC = () => {
   },
 ];
 
+function redirectToContactPageHandler(){
+  router.push('/contact-us')
+}
+
+function handlerMentorDetails(){
+  router.push('/mentor-details')
+}
 
 
   return (
@@ -206,7 +216,9 @@ const CourseLandingPage: React.FC = () => {
       <p>No prior experience needed — just curiosity, commitment, and willingness to learn with structure.</p>
     </div>
 
-    <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
+    <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors"
+    onClick={redirectToContactPageHandler}
+    >
       Start Learning Today
     </button>
   </div>
@@ -238,7 +250,9 @@ const CourseLandingPage: React.FC = () => {
       </ul>
     </div>
 
-    <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
+    <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors"
+    onClick={redirectToContactPageHandler}
+    >
       Start Learning Today
     </button>
   </div>
@@ -334,7 +348,9 @@ const CourseLandingPage: React.FC = () => {
       </ul>
 
       {/* CTA */}
-      <button className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-8 py-3 rounded-full transition-colors duration-300 shadow-lg">
+      <button className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-8 py-3 rounded-full transition-colors duration-300 shadow-lg"
+      onClick={handlerMentorDetails}
+      >
         Know More
       </button>
     </div>
