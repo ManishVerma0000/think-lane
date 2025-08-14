@@ -9,36 +9,62 @@ import {
   Linkedin,
 } from "lucide-react";
 import ContactUsPage from "./ContactUsPage";
+import CoursesCarousel from "./CoursesCarousel";
 
 const CourseLandingPage: React.FC = () => {
 
   const courses = [
-    {
-      id: 1,
-      title: "Estailo",
-      description:
-        "Estailo Fashion offers trendy, Korea-inspired jewelry (earrings, necklaces, rings, bracelets, hair accessories) with free shipping and stylish collections tailored for every occasion",
+  {
+    id: 1,
+    title: "Estailo",
+    description:
+      "Estailo Fashion offers trendy, Korea-inspired jewelry (earrings, necklaces, rings, bracelets, hair accessories) with free shipping and stylish collections tailored for every occasion",
+    image: "/estalio.jpeg",
+    tag: "Digital marketing",
+    url: "https://estailo.com", // Example
+  },
+  {
+    id: 2,
+    title: "Coral Haze",
+    description:
+      "blends Indian tradition with contemporary flair, creating handcrafted designer juttis, kolhapuris, and modern footwear—distinctive, elegant, and comfortably artisanal",
+    image: "/coralhaze.jpg",
+    url: "https://coralhaze.com",
+  },
+  {
+    id: 3,
+    title: "Aakriti Sonawala",
+    description:
+      "Director at Gurugram-based Katalystworld Gems & Jewels Pvt. Ltd.",
+    image: "/aakriti.png",
+    url: "https://katalystworld.com",
+  },
+  {
+    id: 4,
+    title: "Tatsat",
+    description:
+      "Tatsat: A Socially-Conscious Store",
+    image: "/tatsat.png",
+    url: "https://tatsat.co.in",
+  },
+  {
+    id: 5,
+    title: "Umbrashield",
+    description:
+      "Umbrashield is a global pioneer in UPF 50 sun-protective apparel and accessories—crafted to shield you from harmful UV rays with both science and style",
+    image: "/umbrashield.png",
+    url: "https://umbrashields.com",
+  },
+  {
+    id: 6,
+    title: "RoadGods",
+    description:
+      "RoadGods (branded as GODS) is a bold Indian trailblazer in travel and outdoor gear, designing high-performance backpacks and accessories engineered not just for use—but for the user",
+    image: "/roadgods.png",
+    url: "https://www.roadgods.com",
+  },
+];
 
-      image: "/estalio.jpeg",
-      tag: "Digital marketing",
-    },
-    {
-      id: 2,
-      title: "Coral Haze",
-      description:
-        "blends Indian tradition with contemporary flair, creating handcrafted designer juttis, kolhapuris, and modern footwear—distinctive, elegant, and comfortably artisanal",
-      duration: "6 weeks",
-      rating: 4.9,
-      image: "/coralhaze.jpg",
-    },
-    {
-      id: 3,
-      title: "Aakriti sonawala",
-      description:
-        "Director at Gurugram-based Katalystworld Gems & Jewels Pvt. Ltd., ",
-      image: "/aakriti.png",
-    },
-  ];
 
 
   return (
@@ -122,7 +148,8 @@ const CourseLandingPage: React.FC = () => {
               definitely be useful for you.
             </p>
           </div>
-
+          <CoursesCarousel courses={courses}/>
+{/* 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {courses.map((course) => (
               <div
@@ -157,7 +184,7 @@ const CourseLandingPage: React.FC = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
