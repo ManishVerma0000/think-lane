@@ -11,6 +11,7 @@ import {
 import ContactUsPage from "./ContactUsPage";
 import CoursesCarousel from "./CoursesCarousel";
 import { useRouter } from "next/navigation";
+import TestimonialCards from "./TestimonialCards";
 
 
 const CourseLandingPage: React.FC = () => {
@@ -53,6 +54,12 @@ const courses = [
     image: "/roadgods.png",
     url: "https://www.roadgods.com",
   },
+  {
+    id: 7,
+    title: "Divinity decor",
+    image: "/divinity.jpg",
+    url: "https://divinitydecor.com/",
+  },
 ];
 
 
@@ -74,16 +81,12 @@ function handlerMentorDetails(){
           <div className="flex flex-col lg:flex-row lg:items-center sm:p-4">
             <div className="lg:w-1/2 lg:pr-12">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Up Your <span className="text-emerald-600">Skills</span>
+                Learn <span className="text-emerald-600">Real</span> Performance Marketing.
                 <br />
-                To <span className="text-emerald-600">Advance</span> Your
-                <br />
-                <span className="text-emerald-600">Career Path</span>
+                Launch a <span className="text-emerald-600">Bright</span> Corporate&nbsp;Career
               </h1>
               <p className="text-lg text-gray-600 mb-8 max-w-lg">
-                Providing Life Changing Experiences Through Education. Class
-                That Fits Your Busy Life, Designed For Today's Working
-                Professional
+               We Teach You The Performance Strategies We Mastered Over 8+ Years Working With D2C Brands and Corporate Teams.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
@@ -220,20 +223,15 @@ function handlerMentorDetails(){
         </p>
       </div>
     </div>
-
-    {/* Right Image */}
-    <div className="h-full w-full">
-      <img
-        src="/classroom.jpg"
-        alt="Classroom session"
-        className="rounded-lg shadow-lg"
-      />
+    <div className="lg:ml-10">
+    <TestimonialCards/>
     </div>
+    
 
   </div>
 </section>
 
-            <section className="py-20 bg-gray-50">
+  <section className="py-20 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
     
     {/* Left Column - Text */}

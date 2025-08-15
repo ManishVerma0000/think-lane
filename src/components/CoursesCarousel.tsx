@@ -41,49 +41,30 @@ export default function CoursesCarousel({ courses }: CoursesCarouselProps) {
     <div className="relative w-full">
       {/* Carousel container */}
       <div
-        ref={carouselRef}
-        className="flex overflow-x-auto scroll-smooth gap-8 no-scrollbar items-center"
+  ref={carouselRef}
+  className="flex overflow-x-auto scroll-smooth no-scrollbar items-center gap-x-4 sm:gap-x-6"
+>
+  {courses.map((course) => (
+    <div
+      key={course.id}
+      className="flex-none w-32 sm:w-40 md:w-48 h-20 sm:h-24 flex items-center justify-center"
+    >
+      <a
+        href={course.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
       >
-        {courses.map((course) => (
-          <div
-            key={course.id}
-            className="flex-none w-48 h-24 flex items-center justify-center"
-          >
-            <a
-              href={course.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-            >
-              <img
-                src={course.image}
-                alt={`Logo of ${course.id}`}
-                className="max-h-20 max-w-full object-contain"
-              />
-            </a>
-          </div>
-        ))}
-        {/* Duplicate items for seamless loop */}
-        {courses.map((course) => (
-          <div
-            key={`dup-${course.id}`}
-            className="flex-none w-48 h-24 flex items-center justify-center"
-          >
-            <a
-              href={course.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-            >
-              <img
-                src={course.image}
-                alt={`Logo of ${course.id}`}
-                className="max-h-20 max-w-full object-contain"
-              />
-            </a>
-          </div>
-        ))}
-      </div>
+        <img
+          src={course.image}
+          alt={`Logo of ${course.id}`}
+          className="max-h-16 sm:max-h-20 max-w-full object-contain"
+        />
+      </a>
+    </div>
+  ))}
+
+    </div>
     </div>
   );
 }
