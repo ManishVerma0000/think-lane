@@ -76,15 +76,28 @@ function handlerMentorDetails(){
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-emerald-50 to-blue-50 py-12 lg:py-20">
+      <section className="bg-gradient-to-r from-emerald-50 to-blue-50 py-4 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:items-center sm:p-4">
             <div className="lg:w-1/2 lg:pr-12">
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Learn <span className="text-emerald-600">Real</span> Performance Marketing.
-                <br />
-                Launch a <span className="text-emerald-600">Bright</span> Corporate&nbsp;Career
-              </h1>
+     <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-3 leading-tight animate-fade-in">
+  Learn{" "}
+  <span className="bg-gradient-to-r from-emerald-500 to-teal-400 bg-clip-text text-transparent">
+    Real
+  </span>{" "}
+  Performance Marketing.
+</h1>
+
+<h2 className="text-3xl lg:text-5xl font-extrabold text-gray-900 mb-6 animate-slide-up">
+  Launch a{" "}
+  <span className="bg-gradient-to-r from-amber-500 to-orange-400 bg-clip-text text-transparent">
+    Bright
+  </span>{" "}
+  Corporate&nbsp;Career
+</h2>
+
+  
+
               <p className="text-lg text-gray-600 mb-8 max-w-lg">
                We Teach You The Performance Strategies We Mastered Over 8+ Years Working With D2C Brands and Corporate Teams.
               </p>
@@ -95,7 +108,7 @@ function handlerMentorDetails(){
                 
               </div>
             </div>
-            <div className="lg:w-1/2 mt-12 lg:mt-0">
+            <div className="lg:w-1/2 lg:mt-0">
               <ContactUsPage />
             </div>
           </div>
@@ -104,7 +117,7 @@ function handlerMentorDetails(){
 
 
       {/* Popular Courses */}
-      <section className="py-20">
+      <section className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -159,9 +172,7 @@ function handlerMentorDetails(){
       <h3 className="text-2xl font-bold mb-4 flex items-center">
         <span className="mr-2"></span>  What You’ll Learn
       </h3>
-      <p className="mb-4 text-emerald-100 italic">
-        Headline: What You’ll Actually Learn Inside This Program
-      </p>
+      
       <ul className="space-y-3 text-emerald-100">
         <li> Meta Ads (Instagram + Facebook) – Setup to Scaling</li>
         <li> Google Ads (Search + Display) – From basics to smart strategies</li>
@@ -231,12 +242,12 @@ function handlerMentorDetails(){
   </div>
 </section>
 
-  <section className="py-20 bg-gray-50">
+  <section className="py-4 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
     
     {/* Left Column - Text */}
-    <div>
-      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+    <div className="text-black">
+      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
         Meet Our Mentor
       </h2>
       <p className="text-gray-600 mb-4">
@@ -249,7 +260,7 @@ function handlerMentorDetails(){
       </p>
       
       {/* Achievements */}
-      <ul className="space-y-3 mb-8">
+      <ul className="space-y-3 mb-8 text-black">
         <li className="flex items-start">
           <span className="text-emerald-500 text-lg mr-2">✅</span>
           Trained over 1,000 students & professionals
@@ -290,7 +301,7 @@ function handlerMentorDetails(){
 
 
       {/* Blog/News Section */}
-      <section className="py-20">
+      <section className="py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">

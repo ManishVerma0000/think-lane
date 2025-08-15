@@ -30,6 +30,7 @@ export default function TestimonialCards() {
 
   return (
     <div className="h-full w-full bg-gradient-to-r from-emerald-600 to-blue-600 rounded-lg p-8 flex flex-col justify-center space-y-6 ">
+      <h1 className='text-3xl lg:text-4xl font-bold text-gray-900 mb-4'>Students Reviews</h1>
       {testimonials.map((testimonial) => (
         <div
           key={testimonial.id}

@@ -50,82 +50,49 @@ const ContactUsPage: React.FC = () => {
   };
 
   return (
-    <div className="w-full lg:ml-10">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-6 lg:ml-10">
+      <div className="max-w-2xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-black mb-2">CONTACT US</h1>
-          <div className="w-24 h-1 bg-black mx-auto"></div>
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-bold text-black mb-1 sm:text-4xl">
+            CONTACT US
+          </h1>
+          <div className="w-16 h-1 bg-black mx-auto"></div>
         </div>
 
         {/* Contact Form */}
-        <div className="bg-white rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">
+        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-md">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
             Leave us a message
           </h2>
 
-          <div className="space-y-6">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                placeholder="Full Name"
-                className="block w-full px-4 py-2 border rounded-lg"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                placeholder="you@example.com"
-                className="block w-full px-4 py-2 border rounded-lg"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                City
-              </label>
-              <input
-                type="text"
-                name="city"
-                value={formData.city}
-                onChange={handleInputChange}
-                placeholder="Your City"
-                className="block w-full px-4 py-2 border rounded-lg"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Phone Number
-              </label>
-              <input
-                type="text"
-                name="phone"
-                value={formData.phone}
-                onChange={handleInputChange}
-                placeholder="Your Phone Number"
-                className="block w-full px-4 py-2 border rounded-lg"
-              />
-            </div>
+          <div className="space-y-5">
+            {[
+              { label: "Name", name: "name", type: "text", placeholder: "Full Name" },
+              { label: "Email Address", name: "email", type: "email", placeholder: "you@example.com" },
+              { label: "City", name: "city", type: "text", placeholder: "Your City" },
+              { label: "Phone Number", name: "phone", type: "text", placeholder: "Your Phone Number" },
+            ].map((field) => (
+              <div key={field.name}>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  {field.label}
+                </label>
+                <input
+                  type={field.type}
+                  name={field.name}
+                  value={formData[field.name as keyof typeof formData]}
+                  onChange={handleInputChange}
+                  placeholder={field.placeholder}
+                  className="block w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                />
+              </div>
+            ))}
 
             <button
               onClick={handleSubmit}
-              className="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold"
+              className="w-full bg-emerald-600 hover:bg-emerald-700 transition-colors text-white py-2.5 px-5 rounded-lg font-semibold text-sm sm:text-base"
             >
-              Send
+              Register Here
             </button>
           </div>
         </div>

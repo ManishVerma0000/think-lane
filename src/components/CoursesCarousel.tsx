@@ -38,7 +38,7 @@ export default function CoursesCarousel({ courses }: CoursesCarouselProps) {
   }, []);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full mb-4 md:mb-6">
       {/* Carousel container */}
       <div
   ref={carouselRef}
