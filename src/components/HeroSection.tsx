@@ -16,57 +16,45 @@ import { useRouter } from "next/navigation";
 const CourseLandingPage: React.FC = () => {
   const router=useRouter()
 
-  const courses = [
+const courses = [
   {
     id: 1,
     title: "Estailo",
-    description:
-      "Estailo Fashion offers trendy, Korea-inspired jewelry (earrings, necklaces, rings, bracelets, hair accessories) with free shipping and stylish collections tailored for every occasion",
     image: "/estalio.jpeg",
-    tag: "Digital marketing",
-    url: "https://estailo.com", // Example
+    url: "https://estailo.com",
   },
   {
     id: 2,
     title: "Coral Haze",
-    description:
-      "blends Indian tradition with contemporary flair, creating handcrafted designer juttis, kolhapuris, and modern footwear—distinctive, elegant, and comfortably artisanal",
     image: "/coralhaze.jpg",
     url: "https://coralhaze.com",
   },
   {
     id: 3,
     title: "Aakriti Sonawala",
-    description:
-      "Director at Gurugram-based Katalystworld Gems & Jewels Pvt. Ltd.",
     image: "/aakriti.png",
     url: "https://katalystworld.com",
   },
   {
     id: 4,
     title: "Tatsat",
-    description:
-      "Tatsat: A Socially-Conscious Store",
     image: "/tatsat.png",
     url: "https://tatsat.co.in",
   },
   {
     id: 5,
     title: "Umbrashield",
-    description:
-      "Umbrashield is a global pioneer in UPF 50 sun-protective apparel and accessories—crafted to shield you from harmful UV rays with both science and style",
     image: "/umbrashield.png",
     url: "https://umbrashields.com",
   },
   {
     id: 6,
     title: "RoadGods",
-    description:
-      "RoadGods (branded as GODS) is a bold Indian trailblazer in travel and outdoor gear, designing high-performance backpacks and accessories engineered not just for use—but for the user",
     image: "/roadgods.png",
     url: "https://www.roadgods.com",
   },
 ];
+
 
 function redirectToContactPageHandler(){
   router.push('/contact-us')
@@ -101,10 +89,7 @@ function handlerMentorDetails(){
                 <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
                   Get Started Today
                 </button>
-                <button className="flex items-center justify-center border-2 border-emerald-600 text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors">
-                  <Play size={20} className="mr-2" />
-                  Watch Video
-                </button>
+                
               </div>
             </div>
             <div className="lg:w-1/2 mt-12 lg:mt-0">
@@ -114,37 +99,6 @@ function handlerMentorDetails(){
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 bg-emerald-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-white text-2xl lg:text-3xl font-bold">
-              Providing Life Changing Experiences Through Learning
-            </h2>
-            <p className="text-emerald-100 mt-4">
-              Join thousands of students already learning
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-white">25,000+</div>
-              <div className="text-emerald-100 mt-2">Active Students</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-white">100+</div>
-              <div className="text-emerald-100 mt-2">Total Courses</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-white">50+</div>
-              <div className="text-emerald-100 mt-2">Expert Instructors</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-white">99%</div>
-              <div className="text-emerald-100 mt-2">Success Rate</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Popular Courses */}
       <section className="py-20">
@@ -159,42 +113,7 @@ function handlerMentorDetails(){
             </p>
           </div>
           <CoursesCarousel courses={courses}/>
-{/* 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {courses.map((course) => (
-              <div
-                key={course.id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="relative">
-                  <img
-                    src={course.image}
-                    alt={course.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute top-4 left-4"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {course.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{course.description}</p>
 
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <span className="ml-1 text-sm text-gray-600">
-                        {course.rating}
-                      </span>
-                    </div>
-                    <button className="text-emerald-600 font-semibold hover:text-emerald-700 flex items-center">
-                      Learn More
-                      <ChevronRight size={16} className="ml-1" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div> */}
         </div>
       </section>
 

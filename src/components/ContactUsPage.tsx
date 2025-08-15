@@ -1,15 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-  Phone,
-  Mail,
-  MapPin,
-  Youtube,
-  Instagram,
-  Facebook,
-  Twitter,
-} from "lucide-react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactUsPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -17,9 +10,7 @@ const ContactUsPage: React.FC = () => {
     email: "",
     city: "",
     phone: "",
-    message: "",
   });
-  const [status, setStatus] = useState("");
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -33,12 +24,12 @@ const ContactUsPage: React.FC = () => {
 
   const handleSubmit = async () => {
     if (Object.values(formData).some((field) => field.trim() === "")) {
-      alert("Please fill in all fields");
+      toast.error("Please fill in all fields");
       return;
     }
 
     try {
-      setStatus("Sending...");
+      toast.info("Sending...");
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -48,13 +39,13 @@ const ContactUsPage: React.FC = () => {
       const data = await res.json();
 
       if (res.ok) {
-        setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", city: "", phone: "", message: "" });
+        toast.success("Message sent successfully!");
+        setFormData({ name: "", email: "", city: "", phone: "" });
       } else {
-        setStatus(data.error || "Failed to send message");
+        toast.error(data.error || "Failed to send message");
       }
     } catch (error) {
-      setStatus("Something went wrong!");
+      toast.error("Something went wrong!");
     }
   };
 
@@ -69,7 +60,9 @@ const ContactUsPage: React.FC = () => {
 
         {/* Contact Form */}
         <div className="bg-white rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">Leave us a message</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">
+            Leave us a message
+          </h2>
 
           <div className="space-y-6">
             <div>
@@ -128,31 +121,16 @@ const ContactUsPage: React.FC = () => {
               />
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Your Message
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                rows={6}
-                placeholder="Type your message..."
-                className="block w-full px-4 py-2 border rounded-lg resize-none"
-              />
-            </div>
-
             <button
               onClick={handleSubmit}
               className="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold"
             >
               Send
             </button>
-
-            {status && <p className="mt-2 text-sm">{status}</p>}
           </div>
         </div>
       </div>
+      <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
 };

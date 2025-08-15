@@ -3,9 +3,9 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
   try {
-    const { name, email, city, phone, message } = await req.json();
+    const { name, email, city, phone } = await req.json();
 
-    if (!name || !email || !city || !phone || !message) {
+    if (!name || !email || !city || !phone) {
       return NextResponse.json({ error: "All fields are required" }, { status: 400 });
     }
 
@@ -28,7 +28,7 @@ export async function POST(req: Request) {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>City:</strong> ${city}</p>
         <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Message:</strong> ${message}</p>
+        
       `,
     });
 
