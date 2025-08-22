@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   Play,
   ChevronRight,
@@ -12,9 +12,12 @@ import ContactUsPage from "./ContactUsPage";
 import CoursesCarousel from "./CoursesCarousel";
 import { useRouter } from "next/navigation";
 import TestimonialCards from "./TestimonialCards";
+import Modal from "./ContactModal";
+import ContactUsPageForModal from "./ContactUsForModel";
 
 
 const CourseLandingPage: React.FC = () => {
+    const [isOpen, setIsOpen] = useState(false);
   const router=useRouter()
 
 const courses = [
@@ -80,26 +83,22 @@ function handlerMentorDetails(){
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:items-center sm:p-4">
             <div className="lg:w-1/2 lg:pr-12">
-     <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-3 leading-tight animate-fade-in">
-  Learn{" "}
+    <h1
+  className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-gray-900 mb-3 leading-tight animate-fade-in text-center lg:text-left"
+>
+  The{" "}
   <span className="bg-gradient-to-r from-emerald-500 to-teal-400 bg-clip-text text-transparent">
-    Real
+    Ultimate
   </span>{" "}
-  Performance Marketing.
+  Performance Marketing{" "}
+  <span className="bg-gradient-to-r from-emerald-500 to-teal-400 bg-clip-text text-transparent">
+    Mastery
+  </span>{" "}
+  Program
 </h1>
 
-<h2 className="text-3xl lg:text-5xl font-extrabold text-gray-900 mb-6 animate-slide-up">
-  Launch a{" "}
-  <span className="bg-gradient-to-r from-amber-500 to-orange-400 bg-clip-text text-transparent">
-    Bright
-  </span>{" "}
-  Corporate&nbsp;Career
-</h2>
-
-  
-
               <p className="text-lg text-gray-600 mb-8 max-w-lg">
-               We Teach You The Performance Strategies We Mastered Over 8+ Years Working With D2C Brands and Corporate Teams.
+               Run live Meta & Google Ads campaigns, track analytics, and build a portfolio that lands your dream job.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
@@ -140,15 +139,17 @@ function handlerMentorDetails(){
       <section className="py-20 bg-gradient-to-r from-emerald-600 to-blue-600">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-      Is this Programme right for you?
+      Is This Course Right for You?
     </h2>
 
     <div className="text-left text-emerald-100 text-lg mb-8 max-w-2xl mx-auto space-y-4">
-      <p>Students who want to learn high-demand marketing skills, not just theory from college.</p>
-      <p> Beginners in digital marketing who feel overwhelmed by scattered content.</p>
-      <p> Career switchers from sales, operations, or other fields who want to enter marketing.</p>
-      <p> Anyone serious about building a long-term career in performance marketing.</p>
-      <p>No prior experience needed — just curiosity, commitment, and willingness to learn with structure.</p>
+      <p>Yes! This program is designed to empower learners from all walks of life</p>
+      <p> College Students & Freshers - Kickstart your performance marketing career with hands-on training and become industry-ready in 12 Weeks.</p>
+      <p> Career Switchers - Transition smoothly into the high-growth digital industry with practical tools, strategies, and real projects.</p>
+      <p>Business Owners & Entrepreneurs - Learn to run profitable Meta & Google Ads campaigns and scale your business online.</p>
+      <p>Job Seekers & Professionals - Build a strong digital portfolio with live campaign experience that makes you stand out in interviews.</p>
+      <p>Freelancers & Side-Hustlers - Become a client-ready digital marketer and unlock opportunities to work independently.</p>
+      <p>With Thinklane Media, you don’t just learn you practice, implement, and succeed.</p>
     </div>
 
     <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors"
@@ -170,24 +171,46 @@ function handlerMentorDetails(){
     {/* SECTION 3: What You'll Learn */}
     <div className="text-left text-white text-lg mb-8 max-w-2xl mx-auto">
       <h3 className="text-2xl font-bold mb-4 flex items-center">
-        <span className="mr-2"></span>  What You’ll Learn
+        <span className="mr-2"></span>  What You Will Learn from This Course
       </h3>
       
       <ul className="space-y-3 text-emerald-100">
-        <li> Meta Ads (Instagram + Facebook) – Setup to Scaling</li>
-        <li> Google Ads (Search + Display) – From basics to smart strategies</li>
-        <li> Copywriting + Creatives – Build ads that convert</li>
-        <li> Targeting, Retargeting, Funnel Strategy</li>
-        <li> Budget Allocation & Media Planning (Agency Style)</li>
-        <li> Analytics, ROAS, Scaling frameworks</li>
+        <li> During these 12 weeks, you’ll gain hands-on expertise in:</li>
+        <li> Meta Ads Mastery → Run high-converting campaigns, create funnels & retargeting strategies</li>
+        <li> Google Ads Mastery → Search, Display, Video & Shopping campaigns for maximum ROI</li>
+        <li>Google Analytics 4 (GA4) → Track conversions, analyse audience behaviour & optimize campaigns</li>
+        <li>  Microsoft Clarity → Heatmaps, scroll tracking & improving landing page performance</li>
+        <li>Resume & Portfolio Building → Showcase your projects to employers</li>
+        <li>nterview Preparation → Mock interviews, job-oriented Q&A, and confidence-building techniques</li>
+        <li>
+           Capstone Project → Build a full paid marketing funnel with live Meta + Google campaigns
+        </li>
+        <li>
+          By the end of this course, you’ll have the skills, portfolio, and confidence to land high-paying digital marketing roles or grow your business online
+        </li>
       </ul>
     </div>
 
-    <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors"
+    {/* <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors"
     onClick={redirectToContactPageHandler}
     >
-      Start Learning Today
-    </button>
+      Download Course Details
+    </button> */}
+
+    <div>
+      {/* Trigger button */}
+      <button
+        className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors"
+        onClick={() => setIsOpen(true)}
+      >
+        Download Course Details
+      </button>
+
+      {/* Modal with ContactUsPage inside */}
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <ContactUsPageForModal onClose={() => setIsOpen(false)} />
+      </Modal>
+    </div>
   </div>
 </section>
 
