@@ -97,7 +97,7 @@ function handlerMentorDetails(){
   Program
 </h1>
 
-              <p className="text-lg text-gray-600 mb-8 max-w-lg">
+              <p className="text-lg text-gray-600 mb-8 max-w-lg text-center">
                Run live Meta & Google Ads campaigns, track analytics, and build a portfolio that lands your dream job.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
