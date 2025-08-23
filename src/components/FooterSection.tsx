@@ -47,7 +47,7 @@ export default function Footer() {
 
           <div className="border-t border-gray-700 mt-12 pt-8 text-center">
             <p className="text-gray-300">
-              © 2025 Think Lane. All rights reserved. Made with ❤️ for learners
+              © 2025 ThinkLane. All rights reserved. Made with ❤️ for learners
               worldwide.
             </p>
           </div>
