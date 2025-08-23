@@ -12,51 +12,51 @@ const AboutUsPage: React.FC = () => {
   const benefits = [
     {
       number: "01",
-      title: "Proven Strategies",
+      title: "Practical, Hands-On Training",
       description:
-        "We craft data-driven marketing strategies that have helped hundreds of businesses boost their visibility, leads, and sales.",
+        "Manage real Meta Ads & Google Ads campaigns. Learn to set up, run, and optimize campaigns like a pro.",
       icon: <Award className="text-emerald-500" size={24} />,
     },
     {
       number: "02",
-      title: "Real Results",
+      title: "Personal Mentorship",
       description:
-        "From increasing website traffic to improving conversion rates, we deliver measurable results you can track and trust.",
+        "Max 4 students per batch ensures individual attention. Get feedback on your campaigns, ad copies, and strategies.",
       icon: <Target className="text-emerald-500" size={24} />,
     },
     {
       number: "03",
-      title: "Direct Communication",
+      title: "Job-Ready Portfolio",
       description:
-        "We keep you in the loop with transparent reporting, regular updates, and open conversations about your campaigns.",
+        "Build live projects during the course and confidently showcase your skills to recruiters.",
       icon: <MessageCircle className="text-emerald-500" size={24} />,
     },
     {
       number: "04",
-      title: "Affordable Plans",
+      title: "Certification That Matters",
       description:
-        "Our tailored packages are designed to suit businesses of all sizes, ensuring maximum ROI without breaking the bank.",
+        "Earn an industry-recognized certificate and boost your credibility as a Digital Marketing Specialist.",
       icon: <BookOpen className="text-emerald-500" size={24} />,
     },
     {
       number: "05",
-      title: "Ongoing Support",
+      title: "Complete 360° Curriculum",
       description:
-        "From campaign launch to ongoing optimization, our team is always here to guide and support your growth.",
+        "Meta Ads Mastery, Google Ads, Analytics (GA4 & Clarity), Resume building, LinkedIn optimization & mock interviews.",
       icon: <Users className="text-emerald-500" size={24} />,
     },
     {
       number: "06",
-      title: "Growth Partnerships",
+      title: "Guaranteed Career Edge",
       description:
-        "We build long-term partnerships with our clients, acting as an extension of your marketing team.",
+        "Learn the exact strategies businesses need in 2025 and get personal guidance to land your dream role.",
       icon: <Lightbulb className="text-emerald-500" size={24} />,
     },
   ];
 
   return (
     <div className="min-h-screen bg-white">
-      {/* About Us Hero Section */}
+      {/* Hero Section */}
       <section className="py-12 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -67,25 +67,19 @@ const AboutUsPage: React.FC = () => {
                   About Us
                 </h1>
                 <h2 className="text-2xl lg:text-3xl font-semibold text-emerald-500 mb-6">
-                  Driving Growth & Visibility for Businesses Worldwide.
+                  At ThinkLane Digital Academy, digital marketing isn’t just a skill — it’s a career accelerator.
                 </h2>
               </div>
 
               <div className="space-y-4 text-gray-600">
                 <p>
-                  We are a full-service digital marketing agency dedicated to
-                  helping businesses grow their online presence, generate more
-                  leads, and increase revenue.
+                  Our mission is to empower learners with hands-on training, real-time campaign experience, and personal mentorship to make them industry-ready from day one.
                 </p>
                 <p>
-                  Our team of strategists, creatives, and tech experts work
-                  together to create impactful campaigns across SEO, social
-                  media, paid advertising, content marketing, and more.
+                  With small batches of just 4 students per class, we focus on personalized attention so every learner masters the strategies to plan, execute, optimize, and scale campaigns that drive real results.
                 </p>
                 <p>
-                  We believe in building strong, lasting partnerships with our
-                  clients — delivering not just campaigns, but long-term growth
-                  strategies tailored to your unique goals.
+                  We go beyond theory — you’ll learn exactly what top agencies, brands, and businesses expect in a real-world environment.
                 </p>
               </div>
             </div>
@@ -95,17 +89,16 @@ const AboutUsPage: React.FC = () => {
               <div className="relative">
                 <img
                   src="/priscilla-du-preez-XkKCui44iM0-unsplash.jpg"
-                  alt="Digital marketing workspace with analytics dashboard"
+                  alt="ThinkLane Digital Academy Training"
                   className="rounded-2xl shadow-2xl w-full h-auto"
                 />
-                
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Why Choose Us */}
       <section className="py-16 bg-gradient-to-r from-pink-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -114,11 +107,9 @@ const AboutUsPage: React.FC = () => {
               <div className="relative">
                 <img
                   src="/modern-equipped-computer-lab.jpg"
-                  alt="Marketing strategy and creative tools"
+                  alt="Students learning digital marketing in a modern lab"
                   className="rounded-2xl w-full h-auto"
                 />
-                {/* Floating Elements */}
-                
               </div>
             </div>
 
@@ -129,51 +120,20 @@ const AboutUsPage: React.FC = () => {
                   Why Choose Us
                 </h2>
                 <h3 className="text-xl lg:text-2xl font-semibold text-emerald-600 mb-6">
-                  We combine creativity, technology, and data to deliver
-                  exceptional results.
+                  Hands-on learning, personal mentorship, and a career-focused curriculum.
                 </h3>
               </div>
 
-              <div className="space-y-6">
-                <p className="text-gray-600">
-                  Unlike many agencies, we don’t believe in one-size-fits-all
-                  marketing. Every strategy is personalized to your business
-                  goals and audience.
-                </p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                    <span className="text-gray-700">SEO & Content Experts</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="text-gray-700">
-                      Social Media Specialists
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-pink-500 rounded-full"></div>
-                    <span className="text-gray-700">
-                      Data-Driven Campaigns
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    <span className="text-gray-700">
-                      Dedicated Account Managers
-                    </span>
-                  </div>
-                </div>
-
-                <p className="text-gray-600">
-                  We measure success by your business growth — more traffic,
-                  better engagement, and higher conversions.
-                </p>
-
-                <button className="bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
-                  Let’s Grow Your Brand
-                </button>
+              <div className="space-y-6 text-gray-600">
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>Hands-On Learning → Work on live Meta Ads & Google Ads campaigns</li>
+                  <li>Small Batches, Big Impact → Max 4 students per class</li>
+                  <li>Career-Oriented Curriculum → Ads, Analytics, Interview Prep & Resume Building</li>
+                  <li>Job-Ready Training → Build a portfolio recruiters love</li>
+                  <li>Personalized Mentorship → 1-on-1 guidance from an expert trainer</li>
+                  <li>Certification Advantage → Industry-recognized certificate</li>
+                  <li>Real-World Approach → Learn how agencies & startups actually run campaigns</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -186,15 +146,14 @@ const AboutUsPage: React.FC = () => {
           <div className="text-center mb-12">
             <div className="border-l-4 border-emerald-500 pl-6 inline-block mb-6">
               <h2 className="text-left text-lg font-semibold text-emerald-600 mb-2">
-                Our Benefits
+                Course Benefits
               </h2>
             </div>
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Partnering With Us Means More Than Just Marketing.
+              Learn Digital Marketing the Right Way.
             </h3>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              We go beyond running ads — we craft experiences, tell stories, and
-              build strategies that make your brand unforgettable.
+              From managing live campaigns to building a job-ready portfolio, we prepare you for a thriving career in digital marketing.
             </p>
           </div>
 
@@ -234,47 +193,18 @@ const AboutUsPage: React.FC = () => {
       <section className="py-16 bg-gradient-to-r from-emerald-600 to-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Ready to Take Your Business to the Next Level?
+            Ready to Accelerate Your Career in Digital Marketing?
           </h2>
           <p className="text-emerald-100 text-lg mb-8 max-w-2xl mx-auto">
-            Let’s create a marketing strategy that gets real results and grows
-            your brand faster than ever.
+            Join ThinkLane Digital Academy and gain real-world skills, mentorship, and a portfolio that recruiters love.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
-              Get Started Today
+              Enroll Now
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-emerald-600 transition-colors">
-              View Our Services
+              View Curriculum
             </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Statistics Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">
-                500+
-              </div>
-              <div className="text-gray-600">Brands Served</div>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">150%</div>
-              <div className="text-gray-600">Average ROI Increase</div>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-purple-600 mb-2">
-                50+
-              </div>
-              <div className="text-gray-600">Marketing Experts</div>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-pink-600 mb-2">24/7</div>
-              <div className="text-gray-600">Client Support</div>
-            </div>
           </div>
         </div>
       </section>
