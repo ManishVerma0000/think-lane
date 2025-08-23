@@ -2,15 +2,21 @@
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function TopNavigations() {
      const [isMenuOpen, setIsMenuOpen] = useState(false);
-     const router=useRouter()
-     function RedirectToHome(){
-      router.push('/')
-     }
+       const pathname = usePathname();
+     
+
+     const navItems = [
+  { name: "Home", href: "/" },
+  { name: "Courses", href: "/" },
+  { name: "About", href: "/about-us" },
+  { name: "Contact Us", href: "/contact-us" },
+  { name: "Blogs", href: "/" },
+];
   return (
     <>
       <nav className="bg-white shadow-sm">
@@ -74,43 +80,29 @@ export default function TopNavigations() {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t mt-4">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a
-                href="/"
-                className="text-gray-900 block px-3 py-2 text-base font-medium"
-              >
-                Home
-              </a>
-              <a
-                href="/"
-                className="text-gray-600 block px-3 py-2 text-base font-medium"
-              >
-                Courses
-              </a>
-              <a
-                href="/about-us"
-                className="text-gray-600 block px-3 py-2 text-base font-medium"
-              >
-                About
-              </a>
-              <a
-                href="/contact-us"
-                className="text-gray-600 block px-3 py-2 text-base font-medium"
-              >
-                Contact Us
-              </a>
-              <a
-                href="/contact-us"
-                className="text-gray-600 block px-3 py-2 text-base font-medium"
-              >
-                Blogs
-              </a>
-            </div>
-          </div>
-        )}
+        <div className="bg-white border-t mt-4 shadow-lg rounded-lg">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={`block px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 
+                    ${
+                      isActive
+                        ? "bg-gradient-to-r from-emerald-600 to-blue-600 text-white shadow-md"
+                        : "text-gray-700 hover:bg-gray-100"
+                    }`}
+                >
+                  {item.name}
+                </a>
+              );
+            })}
+             </div>
+        </div>
+      )}               
       </nav>
     </>
   );
