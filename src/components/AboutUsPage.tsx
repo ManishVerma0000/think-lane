@@ -7,6 +7,7 @@ import {
   BookOpen,
   Lightbulb,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const AboutUsPage: React.FC = () => {
   const benefits = [
@@ -54,6 +55,10 @@ const AboutUsPage: React.FC = () => {
     },
   ];
 
+ const router=useRouter()
+  function redirectToContactPageHandler(){
+  router.push('/contact-us')
+}
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -67,7 +72,7 @@ const AboutUsPage: React.FC = () => {
                   About Us
                 </h1>
                 <h2 className="text-2xl lg:text-3xl font-semibold text-emerald-500 mb-6">
-                  At ThinkLane Digital Academy, digital marketing isn’t just a skill — it’s a career accelerator.
+                  At ThinkLane Digital Academy, digital marketing isn’t just a skill it’s a career accelerator.
                 </h2>
               </div>
 
@@ -125,16 +130,17 @@ const AboutUsPage: React.FC = () => {
               </div>
 
               <div className="space-y-6 text-gray-600">
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Hands-On Learning → Work on live Meta Ads & Google Ads campaigns</li>
-                  <li>Small Batches, Big Impact → Max 4 students per class</li>
-                  <li>Career-Oriented Curriculum → Ads, Analytics, Interview Prep & Resume Building</li>
-                  <li>Job-Ready Training → Build a portfolio recruiters love</li>
-                  <li>Personalized Mentorship → 1-on-1 guidance from an expert trainer</li>
-                  <li>Certification Advantage → Industry-recognized certificate</li>
-                  <li>Real-World Approach → Learn how agencies & startups actually run campaigns</li>
-                </ul>
-              </div>
+  <ul className="list-disc pl-6 sm:pl-8 space-y-3 text-sm sm:text-base leading-relaxed break-words">
+    <li className="pl-1">Hands-On Learning → Work on live Meta Ads & Google Ads campaigns</li>
+    <li className="pl-1">Small Batches, Big Impact → Max 4 students per class</li>
+    <li className="pl-1">Career-Oriented Curriculum → Ads, Analytics, Interview Prep & Resume Building</li>
+    <li className="pl-1">Job-Ready Training → Build a portfolio recruiters love</li>
+    <li className="pl-1">Personalized Mentorship → 1-on-1 guidance from an expert trainer</li>
+    <li className="pl-1">Certification Advantage → Industry-recognized certificate</li>
+    <li className="pl-1">Real-World Approach → Learn how agencies & startups actually run campaigns</li>
+  </ul>
+</div>
+
             </div>
           </div>
         </div>
@@ -199,11 +205,10 @@ const AboutUsPage: React.FC = () => {
             Join ThinkLane Digital Academy and gain real-world skills, mentorship, and a portfolio that recruiters love.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
+            <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors"
+            onClick={redirectToContactPageHandler}
+            >
               Enroll Now
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-emerald-600 transition-colors">
-              View Curriculum
             </button>
           </div>
         </div>

@@ -102,7 +102,7 @@ function handlerMentorDetails(){
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
-                  Get Started Today
+                  Online Performance Marketing Course
                 </button>
                 
               </div>
@@ -149,7 +149,7 @@ function handlerMentorDetails(){
       <p>Business Owners & Entrepreneurs - Learn to run profitable Meta & Google Ads campaigns and scale your business online.</p>
       <p>Job Seekers & Professionals - Build a strong digital portfolio with live campaign experience that makes you stand out in interviews.</p>
       <p>Freelancers & Side-Hustlers - Become a client-ready digital marketer and unlock opportunities to work independently.</p>
-      <p>With Thinklane Media, you don’t just learn you practice, implement, and succeed.</p>
+      <p>With Thinklane Digital Academy Media, you don’t just learn you practice, implement, and succeed.</p>
     </div>
 
     <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors"
@@ -181,7 +181,7 @@ function handlerMentorDetails(){
         <li>Google Analytics 4 (GA4) → Track conversions, analyse audience behaviour & optimize campaigns</li>
         <li>  Microsoft Clarity → Heatmaps, scroll tracking & improving landing page performance</li>
         <li>Resume & Portfolio Building → Showcase your projects to employers</li>
-        <li>nterview Preparation → Mock interviews, job-oriented Q&A, and confidence-building techniques</li>
+        <li>Interview Preparation → Mock interviews, job-oriented Q&A, and confidence-building techniques</li>
         <li>
            Capstone Project → Build a full paid marketing funnel with live Meta + Google campaigns
         </li>
@@ -243,8 +243,9 @@ function handlerMentorDetails(){
       {/* Group Learning */}
       <h3 className="text-xl font-semibold text-emerald-600 mb-2"> Group Learning Format</h3>
       <p className="text-gray-700 mb-4">
-        All sessions are group classes with collaborative learning and discussion.
-      </p>
+  All sessions are group classes with collaborative learning and discussions, limited to 4 students per batch.
+</p>
+
 
       {/* Fee */}
       <div className="bg-gradient-to-r from-emerald-600 to-blue-600 p-4 rounded-lg mt-6">
@@ -286,11 +287,11 @@ function handlerMentorDetails(){
       <ul className="space-y-3 mb-8 text-black">
         <li className="flex items-start">
           <span className="text-emerald-500 text-lg mr-2">✅</span>
-          Trained over 1,000 students & professionals
+          Trained over 100+ students & professionals
         </li>
         <li className="flex items-start">
           <span className="text-emerald-500 text-lg mr-2">✅</span>
-          Scaled 100+ businesses using data-driven strategies
+          Scaled 15+ D2C brands
         </li>
         <li className="flex items-start">
           <span className="text-emerald-500 text-lg mr-2">✅</span>

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ThinkLane",
+  title: "Thinklane Digital Academy",
   description: "Run live Meta & Google Ads campaigns, track analytics, and build a portfolio that lands your dream job.",
   
 };

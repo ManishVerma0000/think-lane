@@ -8,23 +8,18 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <div className="text-2xl font-bold text-emerald-400 mb-4">
-                ThinkLane
+                Thinklane Digital Academy
               </div>
               <p className="text-gray-300 mb-6">
                 Providing life-changing experiences through education. Your
                 journey to success starts here.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <Facebook size={20} />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <Twitter size={20} />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                
+                <a href="https://www.instagram.com/thinklanemedia" className="text-gray-400 hover:text-white">
                   <Instagram size={20} />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="https://www.linkedin.com/in/rakesh-kumar1994/" className="text-gray-400 hover:text-white">
                   <Linkedin size={20} />
                 </a>
               </div>
@@ -47,29 +42,6 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Categories</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Design
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Development
-                  </a>
-                </li>
-               
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Marketing
-                  </a>
-                </li>
-              </ul>
-            </div>
-
        
           </div>
 

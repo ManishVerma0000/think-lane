@@ -1,16 +1,22 @@
 "use client";
 import React, { useState } from "react";
-import { Star, Mail, MessageCircle, X, Instagram, Facebook, Linkedin } from "lucide-react";
+import {Linkedin } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const ProfilePage: React.FC = () => {
+  const router=useRouter()
   const [activeTab, setActiveTab] = useState("about");
+  function handlerMentorDetails(){
+  router.push('/book-consulations')
+}
+
 
   const tabs = [
     { id: "about", label: "About" },
-    { id: "experience", label: "Work Experience" },
-    { id: "reviews", label: "Reviews (30)" },
-    { id: "education", label: "Education" },
-    { id: "availability", label: "Availability" },
+    // { id: "experience", label: "Work Experience" },
+    // { id: "reviews", label: "Reviews (30)" },
+    // { id: "education", label: "Education" },
+    // { id: "availability", label: "Availability" },
   ];
 
   const skills = [
@@ -170,12 +176,12 @@ const ProfilePage: React.FC = () => {
                   <h4 className="text-sm font-medium text-gray-500 uppercase mb-2">
                     Email Address
                   </h4>
-                  <a
-                    href="mailtorakeshkumar94@gmail.com"
+                  <p
+                    // href="mailtorakeshkumar94@gmail.com"
                     className="text-blue-600 hover:text-blue-700"
                   >
-                    mailtorakeshkumar94@gmail.com
-                  </a>
+                     rakesh@thinklane.in
+                    </p>
                 </div>
                 <div>
                   <h4 className="text-sm font-medium text-gray-500 uppercase mb-3">
@@ -211,11 +217,10 @@ const ProfilePage: React.FC = () => {
 
             {/* Action Buttons */}
             <div className="space-y-3">
-              <button className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors font-medium">
+              <button
+              onClick={handlerMentorDetails}
+              className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors font-medium">
                 Book Consultation
-              </button>
-              <button className="w-full border border-green-600 text-green-600 py-3 rounded-lg hover:bg-green-50 transition-colors font-medium">
-                Send Message
               </button>
             </div>
           </div>
