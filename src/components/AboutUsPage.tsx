@@ -202,7 +202,7 @@ const AboutUsPage: React.FC = () => {
             Ready to Accelerate Your Career in Digital Marketing?
           </h2>
           <p className="text-emerald-100 text-lg mb-8 max-w-2xl mx-auto">
-            Join ThinkLane Digital Academy and gain real-world skills, mentorship, and a portfolio that recruiters love.
+            Join Thinklane Digital Academy and gain real-world skills, mentorship, and a portfolio that recruiters love.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors"
