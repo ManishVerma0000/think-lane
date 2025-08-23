@@ -83,7 +83,7 @@ const ContactUsPage: React.FC = () => {
                   value={formData[field.name as keyof typeof formData]}
                   onChange={handleInputChange}
                   placeholder={field.placeholder}
-                  className="block w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  className="block w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 text-black"
                 />
               </div>
             ))}

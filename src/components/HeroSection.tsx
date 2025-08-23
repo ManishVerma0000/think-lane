@@ -123,7 +123,7 @@ function handlerMentorDetails(){
               Brands I have worked with
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Let's join our famous class, the knowledge provided will
+              Let's join our Valuable class, the knowledge provided will
               definitely be useful for you.
             </p>
           </div>
